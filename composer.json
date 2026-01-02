@@ -1,7 +1,7 @@
 {
     "name": "aeliot/todo-registrar-contracts",
     "type": "library",
-    "description": "Generic abstractions related to TODO Register",
+    "description": "Generic abstractions related to TODO Registrar",
     "license": "MIT",
     "authors": [
         {
