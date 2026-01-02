@@ -1,0 +1,37 @@
+{
+    "name": "aeliot/todo-registrar-contracts",
+    "type": "library",
+    "description": "Generic abstractions related to TODO Register",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anatoliy Melnikov",
+            "email": "5785276@gmail.com"
+        }
+    ],
+    "keywords": [
+        "TODO registrar",
+        "abstractions",
+        "contracts",
+        "decoupling",
+        "interfaces",
+        "interoperability",
+        "standards"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Aeliot\\TodoRegistrarContracts\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/*": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2"
+    }
+}
