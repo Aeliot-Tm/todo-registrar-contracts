@@ -18,17 +18,21 @@ namespace Aeliot\TodoRegistrarContracts;
  */
 interface ContextNodeInterface
 {
-    public const KIND_FILE = 'file';
-    public const KIND_NAMESPACE = 'namespace';
-    public const KIND_CLASS = 'class';
-    public const KIND_INTERFACE = 'interface';
-    public const KIND_TRAIT = 'trait';
-    public const KIND_ENUM = 'enum';
-    public const KIND_METHOD = 'method';
-    public const KIND_FUNCTION = 'function';
-    public const KIND_CLOSURE = 'closure';
     public const KIND_ARROW_FUNCTION = 'arrow_function';
+    public const KIND_CLASS = 'class';
+    public const KIND_CLASS_CONST = 'class_const';
+    public const KIND_CLOSURE = 'closure';
+    public const KIND_ENUM = 'enum';
+    public const KIND_ENUM_CASE = 'enum_case';
+    public const KIND_FILE = 'file';
+    public const KIND_FUNCTION = 'function';
+    public const KIND_INTERFACE = 'interface';
     public const KIND_MATCH = 'match';
+    public const KIND_METHOD = 'method';
+    public const KIND_NAMESPACE = 'namespace';
+    public const KIND_PARAMETER = 'parameter';
+    public const KIND_PROPERTY = 'property';
+    public const KIND_TRAIT = 'trait';
 
     public function getKind(): string;
 
