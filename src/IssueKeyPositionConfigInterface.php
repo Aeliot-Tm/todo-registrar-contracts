@@ -17,6 +17,10 @@ interface IssueKeyPositionConfigInterface
 {
     public function getIssueKeyPosition(): ?string;
 
+    public function getNewSeparator(): ?string;
+
+    public function getReplaceSeparator(): bool;
+
     /**
      * @return string[]
      */
