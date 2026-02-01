@@ -15,5 +15,5 @@ namespace Aeliot\TodoRegistrarContracts;
 
 interface IssueKeyInjectionAwareGeneralConfigInterface
 {
-    public function getIssueKeyInjectionConfig(): IssueKeyInjectionConfigInterface;
+    public function getIssueKeyInjectionConfig(): ?IssueKeyInjectionConfigInterface;
 }
