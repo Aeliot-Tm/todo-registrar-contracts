@@ -15,11 +15,7 @@ namespace Aeliot\TodoRegistrarContracts;
 
 interface IssueKeyInjectionConfigInterface
 {
-    /**
-     * TODO: rename to getPosition case current name is deprecated
-     *       after the moving to the separate config
-     */
-    public function getIssueKeyPosition(): ?string;
+    public function getPosition(): ?string;
 
     public function getNewSeparator(): ?string;
 
