@@ -13,6 +13,9 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts;
 
+/**
+ * @deprecated method `getProcessConfig` will be part of {@see GeneralConfigInterface }
+ */
 interface ProcessAwareGeneralConfigInterface
 {
     public function getProcessConfig(): ?ProcessConfigInterface;

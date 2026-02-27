@@ -13,6 +13,9 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts;
 
+/**
+ * @deprecated method `getIssueKeyInjectionConfig` will be part of {@see ProcessConfigInterface }
+ */
 interface IssueKeyInjectionAwareGeneralConfigInterface
 {
     public function getIssueKeyInjectionConfig(): ?IssueKeyInjectionConfigInterface;

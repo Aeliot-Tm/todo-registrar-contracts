@@ -13,6 +13,9 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts;
 
+/**
+ * @deprecated method `isGlueSameTicket` will be part of {@see ProcessConfigInterface }
+ */
 interface ProcessSameTicketConfigInterface
 {
     public function isGlueSameTicket(): bool;

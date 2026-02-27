@@ -13,6 +13,9 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts;
 
+/**
+ * @deprecated interface will not extend {@see TodoInterface }
+ */
 interface ContextAwareTodoInterface extends TodoInterface
 {
     /**
