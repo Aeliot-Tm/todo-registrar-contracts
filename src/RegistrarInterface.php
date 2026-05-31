@@ -18,6 +18,10 @@ use Aeliot\TodoRegistrarContracts\Registrar\RegistrarInterface as NewRegistrarIn
 /**
  * @deprecated use {@see NewRegistrarInterface }
  */
-interface RegistrarInterface extends NewRegistrarInterface
+interface RegistrarInterface
 {
+    /**
+     * @return string key of registered ticket
+     */
+    public function register(TodoInterface $todo): string;
 }
