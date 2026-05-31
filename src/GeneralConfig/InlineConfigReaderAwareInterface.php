@@ -18,7 +18,8 @@ use Aeliot\TodoRegistrarContracts\InlineConfigReaderInterface;
 interface InlineConfigReaderAwareInterface
 {
     /**
-     * NOTE: it must not return null, but leave 'as is' for backward compatibility
+     * NOTE: It must not return null, but leave 'as is' for backward compatibility.
+     *       Going to make not nullable.
      */
     public function getInlineConfigReader(): ?InlineConfigReaderInterface;
 }

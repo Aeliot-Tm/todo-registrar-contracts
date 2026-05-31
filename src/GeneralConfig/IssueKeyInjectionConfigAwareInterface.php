@@ -15,5 +15,9 @@ namespace Aeliot\TodoRegistrarContracts\GeneralConfig;
 
 interface IssueKeyInjectionConfigAwareInterface
 {
+    /**
+     * NOTE: It must not return null, but leave 'as is' for backward compatibility.
+     *       Going to make not nullable.
+     */
     public function getIssueKeyInjectionConfig(): ?IssueKeyInjectionConfigInterface;
 }
