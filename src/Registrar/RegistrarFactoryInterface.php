@@ -11,7 +11,7 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Aeliot\TodoRegistrarContracts;
+namespace Aeliot\TodoRegistrarContracts\Registrar;
 
 use Aeliot\TodoRegistrarContracts\Exception\InvalidConfigException;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
