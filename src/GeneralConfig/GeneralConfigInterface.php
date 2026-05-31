@@ -11,7 +11,12 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Aeliot\TodoRegistrarContracts;
+namespace Aeliot\TodoRegistrarContracts\GeneralConfig;
+
+use Aeliot\TodoRegistrarContracts\FinderInterface;
+use Aeliot\TodoRegistrarContracts\InlineConfigFactoryInterface;
+use Aeliot\TodoRegistrarContracts\InlineConfigReaderInterface;
+use Aeliot\TodoRegistrarContracts\RegistrarFactoryInterface;
 
 interface GeneralConfigInterface
 {
