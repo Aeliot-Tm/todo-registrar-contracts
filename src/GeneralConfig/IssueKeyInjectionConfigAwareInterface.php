@@ -11,12 +11,9 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Aeliot\TodoRegistrarContracts;
+namespace Aeliot\TodoRegistrarContracts\GeneralConfig;
 
-/**
- * @deprecated method `getIssueKeyInjectionConfig` will be part of {@see ProcessConfigInterface }
- */
-interface IssueKeyInjectionAwareGeneralConfigInterface
+interface IssueKeyInjectionConfigAwareInterface
 {
     public function getIssueKeyInjectionConfig(): ?IssueKeyInjectionConfigInterface;
 }
