@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts\Todo;
 
-use Aeliot\TodoRegistrarContracts\ContextNodeInterface;
+use Aeliot\TodoRegistrarContracts\Context\ContextNodeInterface;
 
 interface ContextAwareInterface
 {
