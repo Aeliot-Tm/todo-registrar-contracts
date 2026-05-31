@@ -20,4 +20,8 @@ use Aeliot\TodoRegistrarContracts\Todo\ContextAwareInterface;
  */
 interface ContextAwareTodoInterface extends ContextAwareInterface, TodoInterface
 {
+    /**
+     * @return ContextNodeInterface[]
+     */
+    public function getContext(): array;
 }
