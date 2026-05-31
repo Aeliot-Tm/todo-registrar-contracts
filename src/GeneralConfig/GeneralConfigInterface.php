@@ -30,8 +30,10 @@ interface GeneralConfigInterface
      * - name of supported registrar (enum value)
      * - instance of registrar factory
      * - class-string of registrar factor (instance will be created internally)
+     *
+     * @return RegistrarFactoryInterface|string;
      */
-    public function getRegistrarType(): RegistrarFactoryInterface|string;
+    public function getRegistrarType();
 
     /**
      * @return string[]
