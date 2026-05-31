@@ -20,4 +20,5 @@ use Aeliot\TodoRegistrarContracts\GeneralConfig\IssueKeyInjectionConfigAwareInte
  */
 interface IssueKeyInjectionAwareGeneralConfigInterface extends IssueKeyInjectionConfigAwareInterface
 {
+    public function getIssueKeyInjectionConfig(): ?IssueKeyInjectionConfigInterface;
 }

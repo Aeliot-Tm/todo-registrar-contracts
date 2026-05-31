@@ -20,4 +20,5 @@ use Aeliot\TodoRegistrarContracts\GeneralConfig\ProcessConfigAwareInterface;
  */
 interface ProcessAwareGeneralConfigInterface extends ProcessConfigAwareInterface
 {
+    public function getProcessConfig(): ?ProcessConfigInterface;
 }
