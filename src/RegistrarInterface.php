@@ -13,6 +13,8 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts;
 
+use Aeliot\TodoRegistrarContracts\Todo\TodoInterface;
+
 interface RegistrarInterface
 {
     /**
