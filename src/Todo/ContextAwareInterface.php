@@ -11,12 +11,11 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Aeliot\TodoRegistrarContracts;
+namespace Aeliot\TodoRegistrarContracts\Todo;
 
-/**
- * @deprecated interface will not extend {@see TodoInterface }
- */
-interface ContextAwareTodoInterface extends TodoInterface
+use Aeliot\TodoRegistrarContracts\ContextNodeInterface;
+
+interface ContextAwareInterface
 {
     /**
      * @return ContextNodeInterface[]
