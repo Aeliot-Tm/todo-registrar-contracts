@@ -11,12 +11,9 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Aeliot\TodoRegistrarContracts;
+namespace Aeliot\TodoRegistrarContracts\GeneralConfig;
 
-/**
- * @deprecated method `getProcessConfig` will be part of {@see GeneralConfigInterface }
- */
-interface ProcessAwareGeneralConfigInterface
+interface ProcessConfigAwareInterface
 {
     public function getProcessConfig(): ?ProcessConfigInterface;
 }
