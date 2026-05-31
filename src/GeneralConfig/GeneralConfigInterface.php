@@ -14,17 +14,11 @@ declare(strict_types=1);
 namespace Aeliot\TodoRegistrarContracts\GeneralConfig;
 
 use Aeliot\TodoRegistrarContracts\FinderInterface;
-use Aeliot\TodoRegistrarContracts\InlineConfigFactoryInterface;
-use Aeliot\TodoRegistrarContracts\InlineConfigReaderInterface;
 use Aeliot\TodoRegistrarContracts\RegistrarFactoryInterface;
 
 interface GeneralConfigInterface
 {
     public function getFinder(): FinderInterface;
-
-    public function getInlineConfigFactory(): ?InlineConfigFactoryInterface;
-
-    public function getInlineConfigReader(): ?InlineConfigReaderInterface;
 
     /**
      * @return array<string,mixed>

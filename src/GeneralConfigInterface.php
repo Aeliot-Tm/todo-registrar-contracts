@@ -14,10 +14,12 @@ declare(strict_types=1);
 namespace Aeliot\TodoRegistrarContracts;
 
 use Aeliot\TodoRegistrarContracts\GeneralConfig\GeneralConfigInterface as BaseGeneralConfigInterface;
+use Aeliot\TodoRegistrarContracts\GeneralConfig\InlineConfigFactoryAwareInterface;
+use Aeliot\TodoRegistrarContracts\GeneralConfig\InlineConfigReaderAwareInterface;
 
 /**
  * @deprecated use {@see BaseGeneralConfigInterface }
  */
-interface GeneralConfigInterface extends BaseGeneralConfigInterface
+interface GeneralConfigInterface extends BaseGeneralConfigInterface, InlineConfigFactoryAwareInterface, InlineConfigReaderAwareInterface
 {
 }
