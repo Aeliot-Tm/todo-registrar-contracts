@@ -13,10 +13,9 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts\GeneralConfig;
 
-/**
- * @method bool isGlueSameTicket()
- */
 interface ProcessConfigInterface
 {
+    public function isGlueSameTicket(): bool;
+
     public function isGlueSequentialComments(): bool;
 }
