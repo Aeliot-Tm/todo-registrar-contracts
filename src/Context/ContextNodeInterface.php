@@ -11,13 +11,14 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Aeliot\TodoRegistrarContracts;
-
-use Aeliot\TodoRegistrarContracts\Todo\TodoInterface as NewTodoInterface;
+namespace Aeliot\TodoRegistrarContracts\Context;
 
 /**
- * @deprecated use {@see NewTodoInterface }
+ * Represents a single element in the context hierarchy.
  */
-interface TodoInterface extends NewTodoInterface
+interface ContextNodeInterface
 {
+    public function getKind(): string;
+
+    public function getName(): ?string;
 }

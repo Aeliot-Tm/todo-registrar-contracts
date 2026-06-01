@@ -11,13 +11,12 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Aeliot\TodoRegistrarContracts;
-
-use Aeliot\TodoRegistrarContracts\Todo\TodoInterface as NewTodoInterface;
+namespace Aeliot\TodoRegistrarContracts\GeneralConfig;
 
 /**
- * @deprecated use {@see NewTodoInterface }
+ * @method bool isGlueSameTicket()
  */
-interface TodoInterface extends NewTodoInterface
+interface ProcessConfigInterface
 {
+    public function isGlueSequentialComments(): bool;
 }

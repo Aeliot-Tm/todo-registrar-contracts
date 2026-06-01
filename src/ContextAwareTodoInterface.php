@@ -13,10 +13,12 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts;
 
+use Aeliot\TodoRegistrarContracts\Todo\ContextAwareInterface;
+
 /**
- * @deprecated interface will not extend {@see TodoInterface }
+ * @deprecated use {@see ContextAwareInterface }, interface will not extend {@see TodoInterface }
  */
-interface ContextAwareTodoInterface extends TodoInterface
+interface ContextAwareTodoInterface extends ContextAwareInterface, TodoInterface
 {
     /**
      * @return ContextNodeInterface[]

@@ -11,15 +11,11 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Aeliot\TodoRegistrarContracts;
+namespace Aeliot\TodoRegistrarContracts\Registrar;
 
 use Aeliot\TodoRegistrarContracts\Exception\InvalidConfigException;
-use Aeliot\TodoRegistrarContracts\Registrar\RegistrarFactoryInterface as NewRegistrarFactoryInterface;
-use Aeliot\TodoRegistrarContracts\Registrar\RegistrarInterface as NewRegistrarInterface;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 
-/**
- * @deprecated use {@see NewRegistrarFactoryInterface }
- */
 interface RegistrarFactoryInterface
 {
     /**
@@ -31,8 +27,6 @@ interface RegistrarFactoryInterface
      *                                      </pre>
      *
      * @throws InvalidConfigException
-     *
-     * @return RegistrarInterface|NewRegistrarInterface
      */
-    public function create(array $config/* , ValidatorInterface $validator */);
+    public function create(array $config/* , ValidatorInterface $validator */): RegistrarInterface;
 }

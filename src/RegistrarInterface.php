@@ -13,6 +13,11 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts;
 
+use Aeliot\TodoRegistrarContracts\Registrar\RegistrarInterface as NewRegistrarInterface;
+
+/**
+ * @deprecated use {@see NewRegistrarInterface }
+ */
 interface RegistrarInterface
 {
     /**

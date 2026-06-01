@@ -13,19 +13,15 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts;
 
-interface GeneralConfigInterface
+use Aeliot\TodoRegistrarContracts\GeneralConfig\GeneralConfigInterface as BaseGeneralConfigInterface;
+use Aeliot\TodoRegistrarContracts\GeneralConfig\InlineConfigFactoryAwareInterface;
+use Aeliot\TodoRegistrarContracts\GeneralConfig\InlineConfigReaderAwareInterface;
+
+/**
+ * @deprecated use {@see BaseGeneralConfigInterface }
+ */
+interface GeneralConfigInterface extends BaseGeneralConfigInterface, InlineConfigFactoryAwareInterface, InlineConfigReaderAwareInterface
 {
-    public function getFinder(): FinderInterface;
-
-    public function getInlineConfigFactory(): ?InlineConfigFactoryInterface;
-
-    public function getInlineConfigReader(): ?InlineConfigReaderInterface;
-
-    /**
-     * @return array<string,mixed>
-     */
-    public function getRegistrarConfig(): array;
-
     /**
      * Returns:
      * - name of supported registrar (enum value)
@@ -33,9 +29,4 @@ interface GeneralConfigInterface
      * - class-string of registrar factor (instance will be created internally)
      */
     public function getRegistrarType(): RegistrarFactoryInterface|string;
-
-    /**
-     * @return string[]
-     */
-    public function getTags(): array;
 }

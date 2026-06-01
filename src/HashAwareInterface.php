@@ -13,10 +13,11 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts;
 
+use Aeliot\TodoRegistrarContracts\Todo\HashAwareInterface as NewHashAwareInterface;
+
 /**
- * Can be assigned to TODO to provide the hash calculated in the previous steps.
+ * @deprecated use {@see NewHashAwareInterface }
  */
-interface HashAwareInterface
+interface HashAwareInterface extends NewHashAwareInterface
 {
-    public function getHash(): string;
 }

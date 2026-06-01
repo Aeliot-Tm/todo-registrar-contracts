@@ -11,14 +11,13 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Aeliot\TodoRegistrarContracts;
+namespace Aeliot\TodoRegistrarContracts\GeneralConfig;
 
-use Aeliot\TodoRegistrarContracts\GeneralConfig\IssueKeyInjectionConfigAwareInterface;
-
-/**
- * @deprecated use {@see IssueKeyInjectionConfigAwareInterface }
- */
-interface IssueKeyInjectionAwareGeneralConfigInterface extends IssueKeyInjectionConfigAwareInterface
+interface IssueKeyInjectionConfigAwareInterface
 {
+    /**
+     * NOTE: It must not return null, but leave 'as is' for backward compatibility.
+     *       Going to make not nullable.
+     */
     public function getIssueKeyInjectionConfig(): ?IssueKeyInjectionConfigInterface;
 }

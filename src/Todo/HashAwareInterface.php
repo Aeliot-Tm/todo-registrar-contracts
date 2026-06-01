@@ -11,13 +11,12 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Aeliot\TodoRegistrarContracts;
-
-use Aeliot\TodoRegistrarContracts\Todo\TodoInterface as NewTodoInterface;
+namespace Aeliot\TodoRegistrarContracts\Todo;
 
 /**
- * @deprecated use {@see NewTodoInterface }
+ * Can be assigned to TODO to provide the hash calculated in the previous steps.
  */
-interface TodoInterface extends NewTodoInterface
+interface HashAwareInterface
 {
+    public function getHash(): string;
 }

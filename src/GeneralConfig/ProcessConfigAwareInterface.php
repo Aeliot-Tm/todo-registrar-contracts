@@ -11,14 +11,13 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Aeliot\TodoRegistrarContracts;
+namespace Aeliot\TodoRegistrarContracts\GeneralConfig;
 
-use Aeliot\TodoRegistrarContracts\GeneralConfig\ProcessConfigAwareInterface;
-
-/**
- * @deprecated use {@see ProcessConfigAwareInterface }
- */
-interface ProcessAwareGeneralConfigInterface extends ProcessConfigAwareInterface
+interface ProcessConfigAwareInterface
 {
+    /**
+     * NOTE: It must not return null, but leave 'as is' for backward compatibility.
+     *       Going to make not nullable.
+     */
     public function getProcessConfig(): ?ProcessConfigInterface;
 }

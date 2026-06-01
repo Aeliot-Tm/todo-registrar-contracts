@@ -13,7 +13,11 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts;
 
-interface ProcessConfigInterface
+use Aeliot\TodoRegistrarContracts\GeneralConfig\ProcessConfigInterface as NewProcessConfigInterface;
+
+/**
+ * @deprecated use {@see NewProcessConfigInterface }
+ */
+interface ProcessConfigInterface extends NewProcessConfigInterface
 {
-    public function isGlueSequentialComments(): bool;
 }

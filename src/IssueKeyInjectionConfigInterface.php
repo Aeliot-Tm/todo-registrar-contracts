@@ -13,16 +13,11 @@ declare(strict_types=1);
 
 namespace Aeliot\TodoRegistrarContracts;
 
-interface IssueKeyInjectionConfigInterface
+use Aeliot\TodoRegistrarContracts\GeneralConfig\IssueKeyInjectionConfigInterface as NewIssueKeyInjectionConfigInterface;
+
+/**
+ * @deprecated use {@see NewIssueKeyInjectionConfigInterface }
+ */
+interface IssueKeyInjectionConfigInterface extends NewIssueKeyInjectionConfigInterface
 {
-    public function getPosition(): ?string;
-
-    public function getNewSeparator(): ?string;
-
-    public function getReplaceSeparator(): bool;
-
-    /**
-     * @return string[]
-     */
-    public function getSummarySeparators(): array;
 }
