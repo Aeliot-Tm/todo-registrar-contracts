@@ -15,6 +15,11 @@ namespace Aeliot\TodoRegistrarContracts\GeneralConfig;
 
 interface ProcessConfigInterface
 {
+    /**
+     * @return array<string,string>
+     */
+    public function getExtensionAliases(): array;
+
     public function isGlueSameTicket(): bool;
 
     public function isGlueSequentialComments(): bool;
